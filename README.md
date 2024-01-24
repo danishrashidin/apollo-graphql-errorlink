@@ -12,6 +12,9 @@ The implementation is simple. But here are the dependencies needed :
     - Used to add extra information to our issues
 
 ```javascript
+import { onError } from "@apollo/client/link/error";
+import * as Sentry from "<your-sentry-package>"
+
 const errorLink = onError(({ graphQLErrors, networkError, operation }) => {
     const scope = new Sentry.Scope()
     scope.setLevel('error')
