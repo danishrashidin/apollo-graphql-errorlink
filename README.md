@@ -1,4 +1,4 @@
-# apollo-graphql-errorlink
+# sentry-apollo-graphql-link
 
 A simple integration to include GraphQL queries &amp; variables in your Sentry issues when using Apollo GraphQL.
 
